@@ -14,8 +14,17 @@ const onClickAdd = () => {
   InnerDiv.className = "todo-name";
   InnerDiv.innerText = InputText;
 
-  // HTMLの構造に沿って各要素を設定
+  // button(完了)タグ生成
+  const completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+
+  // button(削除)タグ生成
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "削除";
+
   wrapDiv.appendChild(InnerDiv);
+  wrapDiv.appendChild(completeButton);
+  wrapDiv.appendChild(deleteButton);
 
   // 未完了リストに追加
   document.getElementById("incompleted-list").appendChild(wrapDiv);
