@@ -1,7 +1,8 @@
 import "./styles.css";
 
 const onClickAdd = () => {
-  alert();
+  const InputText = document.getElementById("add-text").value;
+  document.getElementById("add-text").value = "";
 };
 
 document
