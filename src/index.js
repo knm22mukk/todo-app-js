@@ -17,10 +17,16 @@ const onClickAdd = () => {
   // button(完了)タグ生成
   const completeButton = document.createElement("button");
   completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {
+    alert("完了");
+  });
 
   // button(削除)タグ生成
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
+  deleteButton.addEventListener("click", () => {
+    alert("削除");
+  });
 
   wrapDiv.appendChild(InnerDiv);
   wrapDiv.appendChild(completeButton);
